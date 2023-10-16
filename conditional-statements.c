@@ -12,19 +12,24 @@ int main(){
     if (mark < 0 || mark > 100)
     {
         printf("Invalid input\n");
+        check = 1;
     }
     else if(mark >= 70)
     {
-        printf("First");
+        printf("First\n");
     }
     else if(mark >= 60)
     {
-        printf("2:1");
+        printf("2:1\n");
+    }
+    else if(mark >= 40)
+    {
+        printf("pass\n");
     }
     else
     {
-        printf("you got lower than a 2:1");
-        check = 1;
+        printf("fail\n");
+        
     }
     }
     return 0; 
